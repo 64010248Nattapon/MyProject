@@ -1,7 +1,6 @@
 import React from "react";
 import { HeaderContainerSection } from "./sections/HeaderContainerSection";
 import { MainContentSection } from "./sections/MainContentSection";
-import { NavigationHeaderSection } from "./sections/NavigationHeaderSection";
 import { ProductDisplaySection } from "./sections/ProductDisplaySection";
 
 export const MasterGoalScreen = (): JSX.Element => {
@@ -10,7 +9,6 @@ export const MasterGoalScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="923:34361"
     >
-      <NavigationHeaderSection />
 
       <HeaderContainerSection />
 

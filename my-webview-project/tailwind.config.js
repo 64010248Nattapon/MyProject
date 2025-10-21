@@ -7,6 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'app-navy': '#002D63',
+        'app-blue': '#0050F0',
+        'app-orange': '#F68B1F',
+        'app-gray-light': '#F5F6F7',
+        'app-gray-medium': '#7D8999',
+        'app-border': '#DFE6EC',
+        'app-placeholder': '#B0BCCB',
+        'app-white': '#FFFFFF',
         "apponon-white": "var(--apponon-white)",
         "apponon-white-action": "var(--apponon-white-action)",
         appwhite: "var(--appwhite)",
@@ -75,6 +83,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      
       fontFamily: {
         "default-bold-body": "var(--default-bold-body-font-family)",
         "TTB-allcap": "var(--TTB-allcap-font-family)",
@@ -97,9 +106,10 @@ module.exports = {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
+          'Ekachon', 'sans-serif'
         ],
       },
-      boxShadow: { "down-shadow": "var(--down-shadow)" },
+      boxShadow: { "down-shadow": "var(--down-shadow)",'stepper': '0px 4px 0px rgba(76, 87, 101, 0.06)', },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
