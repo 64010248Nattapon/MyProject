@@ -7,65 +7,65 @@ const products = [
     imageUrl: "https://c.animaapp.com/mh0rcd9w2MaWB5/img/image.png",
     badges: [
       {
-        text: "แนะน",
+        text: "แนะนำ",
         bgColor: "bg-pagedarkbackground",
         borderColor: "border-[#0050f0]",
       },
       {
-        text: "ลดหยอนภาษ",
+        text: "ลดหย่อนภาษี",
         bgColor: "bg-component-informationdefault",
         borderColor: "border-[#002d63]",
       },
     ],
-    title: "ททบ เหมา เหมา อลตรา แคร",
-    description: "คมครองแบบเหมาจาย พรอมรบความคมครอง X2 เมอตองตอสกบ 7 โรครายแรง",
-    premiumLabel: "คาเบยเรมตน",
+    title: "ทีทีบี เหมา เหมา อัลตร้า แคร",
+    description: "คุ้มครองแบบเหมาจ่าย พร้อมรับความคุ้มครอง X2 เมื่อต้องต่อสู้กับ 7 โรคร้ายแรง",
+    premiumLabel: "ค่าเบี้ยเริ่มต้น",
     premiumValue: "7,300",
-    coverageLabel: "คมครองคารกษาผปวยในเหมาจายสง",
+    coverageLabel: "คุ้มครองค่ารักษาผู้ป่วยในเหมาจ่ายสูงสุด",
     coverageValue: "800,000",
   },
   {
     imageUrl: "https://c.animaapp.com/mh0rcd9w2MaWB5/img/image-1.png",
     badges: [
       {
-        text: "ขายด",
+        text: "ขายดี",
         bgColor: "bg-pagelightsuccess",
         borderColor: "border-[#1eb950]",
       },
       {
-        text: "ลดหยอนภาษ",
+        text: "ลดหย่อนภาษี",
         bgColor: "bg-component-informationdefault",
         borderColor: "border-[#002d63]",
       },
     ],
-    title: "ททบ เฮลธ แคร พลส",
+    title: "ทีทีบี เฮลธ แคร พลัส",
     description:
-      "อนใจ คมครองสขภาพใหคนทงบานคารกษาจายตามจรง เบกคาหองไดไมจกดตอวน",
-    premiumLabel: "คาเบยเรมตน",
+      "อุ่นใจ คุ้มครองสุขภาพให้คนทั้งบ้านค่ารักษาจ่ายตามจริง เบิกค่าห้องได้ไม่จำกัดต่อวัน",
+    premiumLabel: "ค่าเบี้ยเริ่มต้น",
     premiumValue: "11,315",
-    coverageLabel: "คารกษาพยาบาลผปวยในสงสด",
+    coverageLabel: "ค่ารักษาพยาบาลผู้ป่วยในสูงสุด",
     coverageValue: "300,000",
   },
   {
     imageUrl: "https://c.animaapp.com/mh0rcd9w2MaWB5/img/image-2.png",
     badges: [
       {
-        text: "ขายด",
+        text: "ขายดี",
         bgColor: "bg-pagelightsuccess",
         borderColor: "border-[#1eb950]",
       },
       {
-        text: "ลดหยอนภาษ",
+        text: "ลดหย่อนภาษี",
         bgColor: "bg-component-informationdefault",
         borderColor: "border-[#002d63]",
       },
     ],
-    title: "ประกนมะเรง รบเงนกอนทกระยะ",
+    title: "ประกันมะเร็ง รับเงินก้อนทุกระยะ",
     description:
-      "คมครองมะเรงทกประเภท ทกระยะ สงสด 1.5 ลานบาท แตไมจบ คมครองชวตอก 50,000 บาท",
-    premiumLabel: "คาเบยเรมตน",
+      "คุ้มครองมะเร็งทุกประเภท ทุกระยะ สูงสุด 1.5 ล้านบาท แต่ไม่จบ คุ้มครองชีวิตอีก 50,000 บาท",
+    premiumLabel: "ค่าเบี้ยเริ่มต้น",
     premiumValue: "504",
-    coverageLabel: "คมครองทกประเภท ทกระยะ รวมสงสด",
+    coverageLabel: "คุ้มครองทุกประเภท ทุกระยะ รวมสูงสุด",
     coverageValue: "1,500,000",
   },
 ];
@@ -129,7 +129,7 @@ export const ProductDisplaySection = (): JSX.Element => {
                         </span>
                         <span className="font-TTB-labelxsmall text-[length:var(--TTB-labelxsmall-font-size)] tracking-[var(--TTB-labelxsmall-letter-spacing)] leading-[var(--TTB-labelxsmall-line-height)] [font-style:var(--TTB-labelxsmall-font-style)] font-[number:var(--TTB-labelxsmall-font-weight)]">
                           {" "}
-                          บาท/ป
+                          บาท/ปี
                         </span>
                       </div>
 
@@ -141,7 +141,7 @@ export const ProductDisplaySection = (): JSX.Element => {
                           &nbsp;
                         </span>
                         <span className="font-TTB-labelxsmall text-[#002d63] text-[length:var(--TTB-labelxsmall-font-size)] tracking-[var(--TTB-labelxsmall-letter-spacing)] leading-[var(--TTB-labelxsmall-line-height)] [font-style:var(--TTB-labelxsmall-font-style)] font-[number:var(--TTB-labelxsmall-font-weight)]">
-                          บาท/ป
+                          บาท/ปี
                         </span>
                       </div>
                     </div>

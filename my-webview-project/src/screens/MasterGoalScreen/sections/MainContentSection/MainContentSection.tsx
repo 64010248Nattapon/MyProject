@@ -5,9 +5,9 @@ import { Card, CardContent } from "../../../../components/ui/card";
 import { Input } from "../../../../components/ui/input";
 
 const productCategories = [
-  { id: "all", label: "ทงหมด", active: true },
-  { id: "health", label: "สขภาพ", active: false },
-  { id: "critical", label: "โรครายแรง", active: false },
+  { id: "all", label: "ทั้งหมด", active: true },
+  { id: "health", label: "สุขภาพ", active: false },
+  { id: "critical", label: "โรคร้ายแรง", active: false },
 ];
 
 export const MainContentSection = (): JSX.Element => {
@@ -24,7 +24,7 @@ export const MainContentSection = (): JSX.Element => {
                   </h1>
 
                   <p className="w-full font-TTB-paragraphsmall font-[number:var(--TTB-paragraphsmall-font-weight)] text-componentdarkdefault text-[length:var(--TTB-paragraphsmall-font-size)] tracking-[var(--TTB-paragraphsmall-letter-spacing)] leading-[var(--TTB-paragraphsmall-line-height)] [font-style:var(--TTB-paragraphsmall-font-style)]">
-                    เลอกสงทคณสนใจเพอคนหาผลตภณฑทเหมาะกบคณ
+                    เลือกสิ่งที่คุณสนใจเพื่อค้นหาผลิตภัณฑ์ที่เหมาะกับคุณ
                   </p>
                 </div>
               </div>
@@ -35,7 +35,7 @@ export const MainContentSection = (): JSX.Element => {
                     <div className="flex flex-col items-start justify-center gap-4 w-full">
                       <div className="inline-flex flex-col gap-2 items-start">
                         <label className="w-[305px] font-TTB-subtitle font-[number:var(--TTB-subtitle-font-weight)] text-componentlightdesc text-[length:var(--TTB-subtitle-font-size)] tracking-[var(--TTB-subtitle-letter-spacing)] leading-[var(--TTB-subtitle-line-height)] [font-style:var(--TTB-subtitle-font-style)]">
-                          สนใจผลตภณฑ
+                          สนใจผลิตภัณฑ์
                         </label>
 
                         <div className="flex w-[305px] items-start gap-2 flex-wrap">
@@ -63,7 +63,7 @@ export const MainContentSection = (): JSX.Element => {
 
                       <div className="flex flex-col gap-2 w-full items-start">
                         <label className="w-full font-TTB-subtitle font-[number:var(--TTB-subtitle-font-weight)] text-componentlightdesc text-[length:var(--TTB-subtitle-font-size)] tracking-[var(--TTB-subtitle-letter-spacing)] leading-[var(--TTB-subtitle-line-height)] [font-style:var(--TTB-subtitle-font-style)]">
-                          คาเบยทตองการจาย/ป (ไมบงคบ)
+                          ค่าเบี้ยที่ต้องการจ่าย/ปี (ไม่บังคับ)
                         </label>
 
                         <div className="flex flex-col items-start gap-0.5 w-full">
@@ -72,7 +72,7 @@ export const MainContentSection = (): JSX.Element => {
                               <div className="flex flex-col items-start gap-1 flex-1">
                                 <div className="inline-flex items-start">
                                   <span className="flex items-center justify-center w-fit font-TTB-labelinput font-[number:var(--TTB-labelinput-font-weight)] text-componentlightlabel text-[length:var(--TTB-labelinput-font-size)] tracking-[var(--TTB-labelinput-letter-spacing)] leading-[var(--TTB-labelinput-line-height)] whitespace-nowrap [font-style:var(--TTB-labelinput-font-style)]">
-                                    คาเบยตอป (ระบมากกวา 500 บาท)
+                                    ค่าเบี้ยต่อปี (ระบุมากกว่า 500 บาท)
                                   </span>
                                 </div>
 
@@ -102,7 +102,7 @@ export const MainContentSection = (): JSX.Element => {
 
         <div className="flex w-full gap-10 px-4 items-center justify-between opacity-0 translate-y-[-1rem] animate-fade-in [--animation-delay:400ms]">
           <h2 className="flex items-center justify-center h-8 font-TTB-h3 font-[number:var(--TTB-h3-font-weight)] text-pagelighttextdefault text-[length:var(--TTB-h3-font-size)] tracking-[var(--TTB-h3-letter-spacing)] leading-[var(--TTB-h3-line-height)] [font-style:var(--TTB-h3-font-style)]">
-            ผลการคนหา
+            ผลการค้นหา
           </h2>
 
           <Button
@@ -110,7 +110,7 @@ export const MainContentSection = (): JSX.Element => {
             className="h-auto inline-flex items-center justify-center gap-1 px-3 py-1 bg-componentsecondarybackground rounded-3xl overflow-hidden border border-solid border-[#f68b1f] hover:bg-componentsecondarybackground/90 transition-colors"
           >
             <span className="flex items-center justify-center w-fit font-TTB-buttonsmall font-[number:var(--TTB-buttonsmall-font-weight)] text-componentprimarybackground text-[length:var(--TTB-buttonsmall-font-size)] text-center tracking-[var(--TTB-buttonsmall-letter-spacing)] leading-[var(--TTB-buttonsmall-line-height)] whitespace-nowrap [font-style:var(--TTB-buttonsmall-font-style)]">
-              เทยบประกน
+              เทียบประกัน
             </span>
 
             <ChevronRightIcon className="w-4 h-4 text-componentprimarybackground" />

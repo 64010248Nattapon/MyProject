@@ -31,7 +31,7 @@ export const HeaderContainerSection = (): JSX.Element => {
         </Button>
 
         <h1 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-TTB-pagetitle font-[number:var(--TTB-pagetitle-font-weight)] text-pagedarkcomponentghostdefault text-[length:var(--TTB-pagetitle-font-size)] text-center tracking-[var(--TTB-pagetitle-letter-spacing)] leading-[var(--TTB-pagetitle-line-height)] whitespace-nowrap [font-style:var(--TTB-pagetitle-font-style)]">
-          เลอกประกน
+          เลือกประกัน
         </h1>
       </nav>
     </header>
