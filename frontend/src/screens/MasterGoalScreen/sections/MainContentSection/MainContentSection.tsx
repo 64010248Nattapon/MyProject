@@ -43,18 +43,16 @@ export const MainContentSection = (): JSX.Element => {
                             <Button
                               key={category.id}
                               variant="ghost"
-                              className={`h-auto inline-flex items-center gap-1 px-3 py-2 rounded-3xl transition-colors ${
-                                category.active
+                              className={`h-auto inline-flex items-center gap-1 px-3 py-2 rounded-3xl transition-colors ${category.active
                                   ? "bg-componentdarkbackground hover:bg-componentdarkbackground/90"
                                   : "bg-componentlightbackground hover:bg-componentlightbackground/80 border border-solid border-[#b0bccb]"
-                              }`}
+                                }`}
                             >
                               <span
-                                className={`flex items-center justify-center w-fit font-TTB-labellist font-[number:var(--TTB-labellist-font-weight)] text-[length:var(--TTB-labellist-font-size)] tracking-[var(--TTB-labellist-letter-spacing)] leading-[var(--TTB-labellist-line-height)] whitespace-nowrap [font-style:var(--TTB-labellist-font-style)] ${
-                                  category.active
+                                className={`flex items-center justify-center w-fit font-TTB-labellist font-[number:var(--TTB-labellist-font-weight)] text-[length:var(--TTB-labellist-font-size)] tracking-[var(--TTB-labellist-letter-spacing)] leading-[var(--TTB-labellist-line-height)] whitespace-nowrap [font-style:var(--TTB-labellist-font-style)] ${category.active
                                     ? "text-componentdarkdefault"
                                     : "text-componentlightlabel"
-                                }`}
+                                  }`}
                               >
                                 {category.label}
                               </span>
