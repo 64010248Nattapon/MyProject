@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: health_insurance_db
+    environment:
+      POSTGRES_USER: health_admin
+      POSTGRES_PASSWORD: health_secure_pass_2024
+      POSTGRES_DB: health_insurance_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    networks:
+      - health_insurance_network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../docker/backend.Dockerfile
+    container_name: health_insurance_backend
+    ports:
+      - "3001:3001"
+    environment:
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USER: health_admin
+      DATABASE_PASSWORD: health_secure_pass_2024
+      DATABASE_NAME: health_insurance_db
+      JWT_SECRET: your_jwt_secret_key_here
+      NODE_ENV: development
+    depends_on:
+      - postgres
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - health_insurance_network
+    command: npm run start:dev
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/frontend.Dockerfile
+    container_name: health_insurance_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3001
+      NODE_ENV: development
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - health_insurance_network
+    command: npm run dev
+
+volumes:
+  postgres_data:
+
+networks:
+  health_insurance_network:
+    driver: bridge
