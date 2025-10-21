@@ -98,6 +98,8 @@ module.exports = {
         "TTB-paragraphsmall": "var(--TTB-paragraphsmall-font-family)",
         "TTB-paragraphxsmall": "var(--TTB-paragraphxsmall-font-family)",
         "TTB-subtitle": "var(--TTB-subtitle-font-family)",
+        'Ekachon': ['Ekachon', 'sans-serif'],
+        'SF_Pro': ['SF Pro', 'system-ui', 'sans-serif'],
         sans: [
           "ui-sans-serif",
           "system-ui",
